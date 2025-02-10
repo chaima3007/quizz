@@ -21,7 +21,7 @@ const Quiz = ({ endQuiz }) => {
 		setError(null);
 		try {
 			const response = await fetch(
-				'https://opentdb.com/api.php?amount=2'
+				'https://opentdb.com/api.php?amount=10&category=21&difficulty=easy'
 			);
 
 			if (!response.ok) {
