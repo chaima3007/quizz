@@ -71,7 +71,7 @@ const Quiz = ({ endQuiz }) => {
 
 	return (
 		<div className="quiz-container">
-            {!quizStarted &&count >= 2 ? (
+            {!quizStarted &&count >= 10 ? (
 				<div>
 					{/* ...existing code... */}
 					<Result score={score} /> {/* Ensure Result is imported */}
