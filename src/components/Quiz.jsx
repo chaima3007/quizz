@@ -9,6 +9,8 @@ const Quiz = ({ endQuiz }) => {
 	const [questions, setQuestions] = useState([]);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
+    // loading est une variable d'état qui 
+    // permet de suivre si les données sont en train d'être chargées.
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null); // Gestion des erreurs
 	const [quizStarted, setQuizStarted] = useState(false);

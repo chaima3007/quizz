@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import './Home.css';
 import Logo from '../../images/logo.png';
+import Quiz from './Quiz';
 
 
 function Home() {
     const [isVisible, setIsVisible] = useState(true);
 
     return (
+        <>
         <div className="Home-body" style={{ display: isVisible ? 'block' : 'none' }}>
            <div>
                     <div className="header">
@@ -29,6 +31,15 @@ function Home() {
                     </div>
                 </div>
         </div>
+        <div className="Home-body" style={{ display: isVisible ? 'none' : 'block' }}>
+            <Quiz
+                            endQuiz={() => {
+                                console.log('end quizz');
+                            }}
+                        />
+        </div>
+
+        </>
     );
 }
 

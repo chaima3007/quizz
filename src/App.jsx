@@ -5,11 +5,11 @@ function App() {
 	return (
 		<>
 			<Home />
-			<Quiz
+			{/* <Quiz
 				endQuiz={() => {
 					console.log('end quizz');
 				}}
-			/>
+			/> */}
 		</>
 	);
 }
