@@ -1,0 +1,16 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+background: url(images/37222e8f1e96630481a8ea56fb62a24d.jpg);
+background-size: cover;
+
+
+width: 100%;
+height: 100vh;
+
+}
+
